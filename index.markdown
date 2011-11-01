@@ -112,3 +112,23 @@ clear text on how exactly does compiler escalates abstraction from one language
 to the next. A secondary, but important goal, is also to learn a lot along the
 way.
 
+
+## Projects
+
+### [Brainfuck](http://github.com/reinventingthewheel/brainfuck)
+
+An optimized brainfuck intepreter that will be used to run our brainfuck
+programs.
+
+
+### [Micro Assembler](http://github.com/reinventingthewheel/micro-assembler)
+
+An assembler built for assembling programs from a very limited assembly language
+(almost machine code) to brainfuck "bytecode".
+
+
+### [Assembler](http://github.com/reinventingthewheel/assembler)
+
+This is the second step in abtraction from the brainfuck machine.
+It's a assembly to micro-assembly compiler.
+
