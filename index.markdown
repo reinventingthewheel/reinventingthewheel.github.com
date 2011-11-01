@@ -125,3 +125,9 @@ programs.
 An assembler built for assembling programs from a very limited assembly language
 (almost machine code) to brainfuck "bytecode".
 
+
+### [Assembler](http://github.com/reinventingthewheel/assembler)
+
+This is the second step in abtraction from the brainfuck machine.
+It's a assembly to micro-assembly compiler.
+
