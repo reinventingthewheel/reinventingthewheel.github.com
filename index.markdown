@@ -1,6 +1,5 @@
 ---
 title: Reinventing the wheel
-layout: default
 ---
 
 > If you can't understand compilers, then you can't understand computer science.
