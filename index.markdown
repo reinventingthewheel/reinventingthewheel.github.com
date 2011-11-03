@@ -4,7 +4,7 @@ layout: default
 ---
 
 > If you can't understand compilers, then you can't understand computer science.
-Eric S. Raymong
+Eric S. Raymond
 
 # Reinventing The Wheel
 
