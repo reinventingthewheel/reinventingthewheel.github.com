@@ -28,9 +28,10 @@ than a Turing Machine interpreter.
 ## The Brainfuck
 
 A Brainfuck program has an implicit byte pointer, called "the pointer", which
-is free to move around within an array of 30000 bytes, initially all set to
-zero. The pointer itself is initialized to point to the beginning of this
-array.
+is free to move around within an array of integers, initially all set to zero.
+The pointer itself is initialized to point to the beginning of this array,
+although there is no such thing as beginning because the array is actually a
+circular tape (i.e. the pointer can loop back over and over).
 
 The Brainfuck programming language consists of eight commands, each of which is
 represented as a single character.
@@ -46,7 +47,7 @@ represented as a single character.
 
 The semantics of the Brainfuck commands can also be succinctly expressed in
 terms of C, as follows (assuming that `p` has been previously defined as a
-`char*`):
+`int*`):
 
 * `>`   becomes     `++p;`
 * `<`   becomes     `--p;`
@@ -85,7 +86,7 @@ form, as we do, by analogy, like to program in a higher level of abstraction
 than to write thousands of assembly instructions.
 
 What the compiler does for us, is to translated form the TPV description into
-particle description, and, forcing or analogy a bit, even this particles
+particle description, and, forcing our analogy a bit, even this particles
 description can, in principle, be an emergent behavior from an even lower level
 reality (e.g. the zeros and ones in a computer circuitry).
 
@@ -112,23 +113,22 @@ clear text on how exactly does compiler escalates abstraction from one language
 to the next. A secondary, but important goal, is also to learn a lot along the
 way.
 
-
 ## Projects
 
 ### [Brainfuck](http://github.com/reinventingthewheel/brainfuck)
 
-An optimized brainfuck intepreter that will be used to run our brainfuck
-programs.
+An optimized brainfuck intepreter written in C++ that will be used to run our
+brainfuck programs.
 
 
 ### [Micro Assembler](http://github.com/reinventingthewheel/micro-assembler)
 
-An assembler built for assembling programs from a very limited assembly language
-(almost machine code) to brainfuck "bytecode".
+An assembler built for assembling programs from a very limited assembly
+language (almost machine code) to brainfuck "bytecode".
 
 
 ### [Assembler](http://github.com/reinventingthewheel/assembler)
 
-This is the second step in abtraction from the brainfuck machine.
-It's a assembly to micro-assembly compiler.
+This is the second step in abtraction from the brainfuck machine.  It's a
+assembly to micro-assembly compiler.
 
